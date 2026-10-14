@@ -1,2 +1,2 @@
 CREATE TABLE IF NOT EXISTS public."Ferramentas" (id bigint NOT NULL, last_user bigint, nome character varying NOT NULL, status boolean, last_update timestamp with time zone DEFAULT now());
-CREATE TABLE IF NOT EXISTS public.esp32_status (last_ping timestamp with time zone DEFAULT now(), id bigint NOT NULL);
+CREATE TABLE IF NOT EXISTS public."Usuarios" (telefone text, id bigint NOT NULL, rfid_uid text, created_at timestamp with time zone NOT NULL DEFAULT now(), autorizado boolean DEFAULT true, nome text, email text);
